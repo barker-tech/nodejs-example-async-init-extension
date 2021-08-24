@@ -1,0 +1,24 @@
+{
+  "name": "aws-templates",
+  "version": "0.1.0",
+  "bin": {
+    "aws-templates": "bin/nodejs-example.js"
+  },
+  "scripts": {
+    "extension-install": "cd lambdas/layers/wait-for-init-layer-extension/wait-for-init-layer-extension && npm ci",
+    "debug-local": "npm run extension-install && npx cdk synth --no-staging > template.yaml && sam local start-api -d 5858",
+    "deploy-local": "npm run extension-install && npx cdk synth --no-staging > template.yaml && sam local start-api",
+    "deploy-sample": "npx tsc && npm run extension-install && npx cdk synth && npx cdk deploy",
+    "destroy-sample": "npx tsc && npm run extension-install && npx cdk synth && npx cdk destroy"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.116.0",
+    "@aws-cdk/aws-apigateway": "^1.116.0",
+    "@aws-cdk/core": "^1.116.0",
+    "@types/aws-lambda": "^8.10.81",
+    "@types/node": "10.17.27",
+    "aws-cdk": "1.116.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  }
+}
