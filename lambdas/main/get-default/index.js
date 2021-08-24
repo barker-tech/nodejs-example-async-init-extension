@@ -1,4 +1,7 @@
 "use strict";
+// Copyright Charles Barker. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
+
 const { connect } = require("net");
 
 // IIFE that will initialize asynchronous operations.

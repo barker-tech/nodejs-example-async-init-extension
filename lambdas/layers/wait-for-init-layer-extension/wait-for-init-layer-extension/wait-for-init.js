@@ -1,3 +1,6 @@
+// Copyright Charles Barker. All Rights Reserved.
+// SPDX-License-Identifier: MIT-0
+
 const { existsSync, unlinkSync } = require("fs");
 const { createServer } = require("net");
 
