@@ -16,7 +16,7 @@ const { connect } = require("net");
   socket.setTimeout(1000);
   const warmingCompleteNotification = new Promise((resolve, reject) => {
     socket.write("ready", () => {
-      resolve("client sent data");
+      resolve("warming complete");
       socket.end();
     });
     socket.on("timeout", () => {
