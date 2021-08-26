@@ -48,3 +48,6 @@ This path contains the extension layer specific code.
 
 This path contains a sample function for initailization.
 
+## Detailed Explains
+
+The process is detailed in the article [Executing Asynchronous Operations during the AWS Lambda NodeJs Init Phase](https://barker.tech/aws-lambda-nodejs-async-init-88b5c24af567?source=friends_link&sk=79dbb80045ad97c62f58fa4b74ade68b).
